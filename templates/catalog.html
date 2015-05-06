@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link rel=stylesheet type=text/css href="{{url_for('static',filename='WIP.css')}}"></link>
+	</head>
+	
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<p>Media Store  / <a href='{{url_for('showLogin')}}'>Login</a></p>
+			</div>
+
+			<div class='sidebar'>
+					<h1>Categories</h1>
+					<a href='{{url_for('newCategory')}}'> Add New Category </a>
+				</br>
+			</br>
+
+					{% for category in categories %}
+					<div>
+						<b><a href='{{url_for('showItems', category_id=category.id)}}'>{{category.name}}</a></b>
+					</br>
+						<a href='{{url_for('deleteCategory', category_id=category.id)}}'>Delete</a> 
+						<a href='{{url_for('editCategory', category_id=category.id)}}'>Edit</a>
+						</br>
+					</br>
+					</div>
+					{% endfor %}
+			</div>
+
+			<div class='center'> 
+				<h3>Latest Items</h3>
+				{% for item in items %}
+				<div>
+				{{item.name}}
+				</div>
+				{% endfor %} 
+			</div>
+		</div>
+
+	</body>
+</html>
+
+

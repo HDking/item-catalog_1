@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<h1>{{item.name}}</h1>
+
+		<div>
+			Description: {{item.description}}
+		</br>
+		</br>
+			<a href='{{url_for('showItems', category_id=category.id)}}'>Back to overview</a>
+		</br>
+		</br>
+			<a href='{{url_for('editItem', category_id=category.id, item_id=item.id)}}'>Edit</a>
+			<a href='{{url_for('deleteItem', category_id=category.id, item_id=item.id)}}'>Delete</a>
+		</div>
+		
+	</body>
+</html>

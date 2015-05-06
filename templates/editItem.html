@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<h1>Edit Item</h1>
+
+		<form action='#' method = 'post'>
+
+				<input type='text' size='30' name='name' placeholder='{{item.name}}'>
+				<input type='submit' value ='Edit'>
+
+				<a href='{{url_for('showDescription', category_id=category.id, item_id=item.id)}}'> Cancel </a>
+
+		</form>
+
+	</body>
+</html>

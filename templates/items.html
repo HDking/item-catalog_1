@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h1>{{category.name}} items</h1>
+
+		{% for cat in categories %}
+		<div>
+			<a href='{{url_for('showItems', category_id = cat.id)}}'>{{cat.name}}</a>
+		</div>
+		{% endfor %}
+
+
+		<h3>{{category.name}} available</h3>
+		<h3><a href='{{url_for('newItem', category_id=category.id)}}'> Add New Item</a></h3>
+		{% for item in items %}
+		<div>
+			<a href='{{url_for('showDescription',category_id = category.id, item_id=item.id)}}'>{{item.name}}</a>
+		</div>
+		{% endfor %}
+
+
+	</body>
+</html>

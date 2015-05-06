@@ -1,0 +1,51 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	background-color: #d3d3d3;
+}
+
+.header {
+    height:15%;
+    background:#2A52BE;
+    border:1px solid #CCC;
+    width: 100%;
+    margin:0px auto;
+}
+
+.header p{
+	position: center;
+	margin-left: 3%;
+	margin-top: 3%;
+	font-family: helvetica;
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+	width: 50%;
+	overflow:hidden;
+}
+
+.sidebar{
+	background-color: #00BFFF;
+	height: 85%;
+	width: 15%;
+	float: left;
+}
+
+.center{
+	background-color: #d3d3d3;
+	overflow: hidden;
+	height: 83%;
+	padding: 2%;
+
+}
+
+.button{
+	margin-top: 0%;
+	padding: 0%;
+	overflow: hidden;
+}

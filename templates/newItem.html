@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h1>New Item for {{category.name}}</h1>
+
+		<form action='#' method = 'post'>
+
+			<p> Name:</p>
+				<input type='text' size='30' name='name' placeholder='New Item'>
+			<p>Description: </p>
+				<input type='text' size='30' name='description' placeholder='Description'>
+
+
+			<input type='submit' value ='Create'>
+
+			<a href='{{url_for('showCategories')}}'> Cancel </a>
+
+		</form>
+
+	</body>
+</html>
